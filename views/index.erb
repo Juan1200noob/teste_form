@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <div class="container">
+            <form method="post" action="/contact">
+                <label for="email"><strong>Email: </strong></label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="message"><strong>Mensagem: </strong></label>
+                <textarea name="message" id="message" maxlength="1000" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>
