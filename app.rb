@@ -1,4 +1,4 @@
-require "rack/utils"
+require "rack"
 require "dotenv/load"
 require "sinatra"
 require "mail"
