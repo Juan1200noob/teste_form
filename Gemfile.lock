@@ -22,6 +22,9 @@ GEM
       timeout
     net-smtp (0.5.1)
       net-protocol
+    nio4r (2.7.4)
+    puma (7.0.3)
+      nio4r (~> 2.0)
     rack (3.2.1)
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
@@ -48,6 +51,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   mail
+  puma
   rack
   sinatra
 
