@@ -37,7 +37,7 @@ post "/contact" do
             port: 587,
             domain: "teste-form.onrender.com",
             user_name: "apikey",
-            password: ENV["SENDGRID_API_KEY"],
+            password: ENV["USER_PASSWORD"],
             authentication: "plain",
             enable_starttls_auto: true
         }
