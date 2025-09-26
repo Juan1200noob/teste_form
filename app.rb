@@ -33,10 +33,11 @@ post "/contact" do
 
     Mail.defaults do
         delivery_method :smtp, {
-            address: "smtp.gmail.com",
+            address: "smtp.sendgrid.net",
             port: 587,
-            user_name: ENV["USER_NAME"],
-            password: ENV["USER_PASSWORD"],
+            domain: "teste-form.onrender.com",
+            user_name: "apikey",
+            password: ENV["SENDGRID_API_KEY"],
             authentication: "plain",
             enable_starttls_auto: true
         }
