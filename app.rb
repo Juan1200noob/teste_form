@@ -6,6 +6,10 @@ require "mail"
 set :bind, '0.0.0.0'
 set :port, ENV['PORT'] || 4567
 
+get "/" do
+  redirect "/home"
+end
+
 get "/home" do
     erb :index
 end
